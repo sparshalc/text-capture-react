@@ -1,0 +1,130 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(239, 239, 239);
+  overflow-x: scroll;
+}
+
+
+
+.App h1{
+  color: #2382f6;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.247);
+}
+span{
+  font-weight: 800;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.247);
+}
+.input-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.input-wrapper label {
+  padding: 9px 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #2382f6;
+  color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+}
+button{
+  padding: 13px 12px;
+  margin: 0px 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #f62323;
+  color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.247);
+  border-radius: 10px; 
+  border: 0;
+  outline: 0;
+}
+button:hover{
+  background-color: #dc1e1e;
+}
+.input-wrapper label:hover{
+  background-color: #1b77e8;
+}
+.result {
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.result .box-image {
+  height: 100%;
+  padding: 2px 10px;
+  margin: 0px 12px;
+  border: 1px solid #2382f6;
+}
+
+.result .box-p {
+  height: 100%;
+  padding: 2px 10px;
+  margin: 0px 12px;
+  border: 1px solid #2382f6;
+}
+
+.result img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.result p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.footer {
+  position: fixed;
+  left: 50%;
+  bottom: -20px;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  color: white;
+  background-color: #2382f6;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.197);
+  /* padding: 3px; */
+  font-size: 13px;
+  border-radius: 15px;
+  text-align: center;
+}
+.t-para{
+  color: black;
+  text-align: center;
+  color: grey;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+button.copy{
+  background-color: #029904;
+}
+
+button.hide{
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .result {
+    grid-template-columns: 1fr 1fr;
+  }
+}
